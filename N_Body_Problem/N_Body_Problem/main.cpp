@@ -107,11 +107,12 @@ std::vector<std::vector<double>> pvecdot(std::vector<double> mass, std::vector<s
 	std::vector<std::vector<double>> Pvecdot = qvec;
 	for(int i=0; i < qvec.size(); i++) {
 		Pvecdot[i] = {0,0,0};
-		for(int j=0; i<qvec.size(); j++) {
-			for(int k=0; k < qvec[0].size(); k++) {
-				std::cout<<(qvec[i][k]-qvec[j][k])<<'\n';
-				std::cout<< (pow( (std::sqrt(dot(add2(qvec[i],mult2(-1, qvec[j])), add2(qvec[i],mult2(-1, qvec[j]))))), 3)) <<'\n';
-				Pvecdot[i][k] += G * mass[i] * mass[j] * ((qvec[i][k]-qvec[j][k]) / (pow( (std::sqrt(dot(add2(qvec[i],mult2(-1, qvec[j])), add2(qvec[i],mult2(-1, qvec[j]))))), 3)));
+		for(int j=0; j<qvec.size(); j++) {
+			for(int k=0; k < qvec[i].size(); k++) {
+				if(i != j){
+					Pvecdot[i][k] += G * mass[i] * mass[j] * ((qvec[i][k]-qvec[j][k]) /
+						(pow( (std::sqrt(dot(add2(qvec[i],mult2(-1, qvec[j])), add2(qvec[i],mult2(-1, qvec[j]))))), 3)));
+				}
 			}
 		}
 	}
@@ -126,6 +127,7 @@ void integrator(std::vector<std::vector<double>> qvec0, std::vector<std::vector<
 	
 	for (int i = 1; i< N; i++){
 		qresults.push_back(add(qresults[i-1], mult(dt, add(presults[i-1],smult(mult(dt/2, pvecdot(mass,qresults[i-1])),invert(mass))))));
+				std::cout<<i<<'\n';
 		presults.push_back(add(presults[i-1], add(mult(dt/2,smult(pvecdot(mass,qresults[i-1]),mass)),mult(dt/2,smult(pvecdot(mass,qresults[i]),mass)))));
 	}	
 	
@@ -150,11 +152,12 @@ void integrator(std::vector<std::vector<double>> qvec0, std::vector<std::vector<
 }
 
 int main(){
-	std::vector<std::vector<double>> q0{{1,1,1},{200,200,200}};
-	std::vector<std::vector<double>> p0{{-1,-1,-1.5},{1,0.5,1}};
+	std::cout << "program starting\n";
+	std::vector<std::vector<double>> q0{{1,1,1},{200,100,200},{30,30,30}};
+	std::vector<std::vector<double>> p0{{-1,-1,-1.5},{1,0.5,1},{2,1,-3}};
 	int N=1000;
 	double dt=0.1;
-	std::vector<double> mass{10000,10000};
+	std::vector<double> mass{10000,10000,100000};
 	integrator(q0,p0,mass,dt,N);
 	return 0;
 }
