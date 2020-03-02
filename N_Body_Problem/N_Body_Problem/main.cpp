@@ -150,7 +150,7 @@ void integrator(std::vector<std::vector<double>> qvec0, std::vector<std::vector<
 }
 
 int main(){
-	std::vector<std::vector<double>> q0{{1,1,1},{2000,20000,200}};
+	std::vector<std::vector<double>> q0{{1,1,1},{200,200,200}};
 	std::vector<std::vector<double>> p0{{-1,-1,-1.5},{1,0.5,1}};
 	int N=1000;
 	double dt=0.1;

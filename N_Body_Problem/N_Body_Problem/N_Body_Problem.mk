@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=N_Body_Problem
 ConfigurationName      :=Debug
-WorkspacePath          :=C:/Users/catie/Documents/code/N_Body_Problem
-ProjectPath            :=C:/Users/catie/Documents/code/N_Body_Problem/N_Body_Problem
+WorkspacePath          :=C:/Users/catie/Documents/code/NBody_Simulation/N_Body_Problem
+ProjectPath            :=C:/Users/catie/Documents/code/NBody_Simulation/N_Body_Problem/N_Body_Problem
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=catie
-Date                   :=01/03/2020
+Date                   :=02/03/2020
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -62,7 +62,7 @@ AS       := C:/MinGW/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/Particle.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Particle.cpp$(ObjectSuffix) 
 
 
 
@@ -93,17 +93,17 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Particle.cpp$(ObjectSuffix): Particle.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Particle.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Particle.cpp$(DependSuffix) -MM Particle.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/catie/Documents/code/N_Body_Problem/N_Body_Problem/Particle.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Particle.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Particle.cpp$(PreprocessSuffix): Particle.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Particle.cpp$(PreprocessSuffix) Particle.cpp
-
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/catie/Documents/code/N_Body_Problem/N_Body_Problem/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/catie/Documents/code/NBody_Simulation/N_Body_Problem/N_Body_Problem/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
+
+$(IntermediateDirectory)/Particle.cpp$(ObjectSuffix): Particle.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Particle.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Particle.cpp$(DependSuffix) -MM Particle.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/catie/Documents/code/NBody_Simulation/N_Body_Problem/N_Body_Problem/Particle.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Particle.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Particle.cpp$(PreprocessSuffix): Particle.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Particle.cpp$(PreprocessSuffix) Particle.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
