@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="N_Body_Problem" Database="" Version="10000">
-  <Project Name="N_Body_Problem" Path="N_Body_Problem/N_Body_Problem.project" Active="Yes"/>
-  <Project Name="Simulation" Path="Simulation/Simulation.project" Active="No"/>
+  <Project Name="N_Body_Problem" Path="N_Body_Problem/N_Body_Problem.project" Active="No"/>
+  <Project Name="Simulation" Path="Simulation/Simulation.project" Active="Yes"/>
+  <Project Name="N_Body_Problem" Path="N_Body_Problem/N_Body_Problem.project"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
       <Project Name="N_Body_Problem" ConfigName="Debug"/>
       <Project Name="Simulation" ConfigName="Debug"/>
+      <Project Name="N_Body_Problem" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
       <Project Name="N_Body_Problem" ConfigName="Release"/>
       <Project Name="Simulation" ConfigName="Release"/>
+      <Project Name="N_Body_Problem" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
