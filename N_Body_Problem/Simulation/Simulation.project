@@ -8,7 +8,7 @@
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
-    <File Name="../N_Body_Problem/csv.h"/>
+    <File Name="rapidcsv.h"/>
     <File Name="main.cpp"/>
   </VirtualDirectory>
   <Settings Type="Executable">
@@ -22,7 +22,7 @@
       <ResourceCompiler Options=""/>
     </GlobalSettings>
     <Configuration Name="Debug" CompilerType="MinGW ( MinGW )" DebuggerType="LLDB Debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
-      <Compiler Options="-g;-O0;-Wall;-std=c++17;-lpthread" C_Options="-g;-O0;-Wall" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+      <Compiler Options="-g;-O0;-Wall;-std=c++0x;-lpthread" C_Options="-g;-O0;-Wall" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
         <IncludePath Value="C:\Users\Michael\Documents\GitHub\NBody_Simulation\N_Body_Problem\N_Body_Problem"/>
       </Compiler>
       <Linker Options="" Required="yes"/>
