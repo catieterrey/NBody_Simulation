@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session Name="C:\Users\Michael\Documents\GitHub\NBody_Simulation\N_Body_Problem\N_Body_Problem.workspace">
+<Session Name="C:\Users\catie\Documents\code\NBody_Simulation\N_Body_Problem\N_Body_Problem.workspace">
   <int Value="0" Name="m_selectedTab"/>
-  <wxString Value="C:\Users\Michael\Documents\GitHub\NBody_Simulation\N_Body_Problem\N_Body_Problem.workspace" Name="m_workspaceName"/>
+  <wxString Value="C:\Users\catie\Documents\code\NBody_Simulation\N_Body_Problem\N_Body_Problem.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="C:\Users\Michael\Documents\GitHub\NBody_Simulation\N_Body_Problem\Simulation\main.cpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="21" Name="CurrentLine"/>
+      <wxString Value="C:\Users\catie\Documents\code\NBody_Simulation\N_Body_Problem\N_Body_Problem\csv.h" Name="FileName"/>
+      <int Value="11" Name="FirstVisibleLine"/>
+      <int Value="31" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

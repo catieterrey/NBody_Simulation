@@ -5,14 +5,14 @@
 ## Debug
 ProjectName            :=Simulation
 ConfigurationName      :=Debug
-WorkspacePath          :=C:/Users/Michael/Documents/GitHub/NBody_Simulation/N_Body_Problem
-ProjectPath            :=C:/Users/Michael/Documents/GitHub/NBody_Simulation/N_Body_Problem/Simulation
+WorkspacePath          :=C:/Users/catie/Documents/code/NBody_Simulation/N_Body_Problem
+ProjectPath            :=C:/Users/catie/Documents/code/NBody_Simulation/N_Body_Problem/Simulation
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=Michael
+User                   :=catie
 Date                   :=22/03/2020
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
@@ -95,7 +95,7 @@ PreBuild:
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Michael/Documents/GitHub/NBody_Simulation/N_Body_Problem/Simulation/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/catie/Documents/code/NBody_Simulation/N_Body_Problem/Simulation/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
 
