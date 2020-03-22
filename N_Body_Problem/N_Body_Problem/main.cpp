@@ -160,9 +160,4 @@ int main(){
 	double dt=0.1;
 	std::vector<double> mass{10000,10000,100000};
 	integrator(q0,p0,mass,dt,N);
-int main(int argc, char **argv)
-{
-	printf("hello world\n");
-	return 0;
-}
 }
