@@ -1,4 +1,6 @@
 -IC:\Github\NBody_Simulation\N_Body_Problem\Simulation
 -IC:\Users\Michael\Documents\GitHub\NBody_Simulation\N_Body_Problem\N_Body_Problem
+-IC:\Users\mastw\OneDrive\Documents\boost\boost_1_73_0
+-IC:\Users\mastw\OneDrive\Documents\gnuplot\gnuplot-cpp
 -target
 i686-pc-windows-gnu

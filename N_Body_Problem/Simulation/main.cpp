@@ -4,6 +4,9 @@
 #include <string>
 #include <cstring>
 #include <algorithm>
+#include <cmath>
+#include "gnuplot_i.hpp"
+
 
 using namespace std;
 
