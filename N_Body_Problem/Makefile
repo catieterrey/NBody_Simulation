@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ N_Body_Problem - Debug ]----------"
-	@cd "N_Body_Problem" && "$(MAKE)" -f  "N_Body_Problem.mk"
+	@echo "----------Building project:[ Simulation - Debug ]----------"
+	@cd "Simulation" && "$(MAKE)" -f  "Simulation.mk"
 clean:
-	@echo "----------Cleaning project:[ N_Body_Problem - Debug ]----------"
-	@cd "N_Body_Problem" && "$(MAKE)" -f  "N_Body_Problem.mk" clean
+	@echo "----------Cleaning project:[ Simulation - Debug ]----------"
+	@cd "Simulation" && "$(MAKE)" -f  "Simulation.mk" clean

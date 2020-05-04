@@ -6,6 +6,7 @@
 #include <math.h>
 #include <fstream>
 #include <iterator>
+#include <stdio.h>
 
 //function to multiply a scalar by a vector
 std::vector<std::vector<double>> mult(double x, std::vector<std::vector<double>> v){
@@ -159,5 +160,4 @@ int main(){
 	double dt=0.1;
 	std::vector<double> mass{10000,10000,100000};
 	integrator(q0,p0,mass,dt,N);
-	return 0;
 }
