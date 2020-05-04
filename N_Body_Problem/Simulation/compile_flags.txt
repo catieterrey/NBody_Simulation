@@ -1,0 +1,4 @@
+-IC:\Github\NBody_Simulation\N_Body_Problem\Simulation
+-IC:\Users\mastw\OneDrive\Documents\gnuplot\gnuplot-iostream
+-target
+i686-pc-windows-gnu
